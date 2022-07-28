@@ -55,11 +55,21 @@ html, body {
 
 .user-options {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
 }
 
 .user-options > div {
+  font-size: 16px;
   justify-self: center;
+  align-self: center;
+  background-color: brown;
+  border-radius: 24px;
+  padding: 8px 20px;
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 .main-content {
