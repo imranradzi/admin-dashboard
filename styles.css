@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 4fr;
+  gap: 10px;
+}
+
+.dashboard {
+  background-color: blueviolet;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.user-info {
+  background-color: green;
+}
+
+.main-content {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.projects {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.project-items {
+  background-color: brown;
+}
+
+.others {
+  background-color: black;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.other-items {
+  background-color: bisque;
+}
