@@ -1,54 +1,110 @@
+@font-face {
+  font-family: metrophobic;
+  src: url(Metrophobic-Regular.ttf)
+}
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   color: white;
+  font-family: 'metrophobic', Arial;
+  font-size: 24px;
 }
 
 .main-container {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template: 1fr 5fr / 1fr 4fr;
-  gap: 10px;
+  grid-template: 1fr 5fr / 1fr 5fr;
 }
 
-.dashboard {
-  background-color: blueviolet;
+.sidebar {
+  background-color: rgb(59, 59, 59);
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
+.sidebar > div {
+  padding: 16px;
+}
+
+.sidebar-options > div,
+.sidebar-misc > div {
+  padding: 8px;
+}
+
+
 .user-info {
-  background-color: green;
+  background-color: rgb(32, 32, 32);
+  display: grid;
+  grid-template: 1fr 1.5fr / 3fr 2fr;
+}
+
+.user-info > div {
+  padding: 16px 24px;
+}
+
+.username, .user-options {
+  justify-self: center;
+}
+
+.user-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.user-options > div {
+  justify-self: center;
 }
 
 .main-content {
-  background-color: red;
+  background-color: rgb(153, 153, 153);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 10px;
+  gap: 20px;
+  padding: 24px;
 }
 
 .projects {
-  background-color: aqua;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-rows: 40px 1fr;
 }
 
-.project-items {
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.projects-container > .items {
   background-color: brown;
+  box-shadow: 12px 0px rgb(75, 74, 74) inset;
+}
+
+.descriptor {
+  padding: 0px 0px 4px 0px;
 }
 
 .others {
-  background-color: black;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  grid-template-rows: 40px 1fr;
 }
 
-.other-items {
-  background-color: bisque;
+.other-items-container {
+  display: grid;
+  grid-template-rows: 1fr 36px 1fr;
+  gap: 14px;
+}
+
+.other-items-container > .items {
+  background-color: brown;
+}
+
+.items {
+  border-radius: 5px 10px;
 }
