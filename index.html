@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="main-container">
@@ -106,7 +107,19 @@
           <input type="text">
         </div>
       </div>
-      <div class="username">John Doe</div>
+      <div class="username">
+        <div>
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" />
+          </svg>
+        </div>
+        <div>
+          <svg style="width:36px;height:36px;" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+          </svg>
+        </div>
+        <div>John Doe</div>
+      </div>
       <div class="user-greeting">
         <div>
           <svg style="width:90%;height:90%;" viewBox="0 0 24 24">
@@ -133,24 +146,142 @@
       <div class="projects">
         <div class="descriptor">Your Projects</div>
         <div class="projects-container">
-          <div class="items">one</div>
-          <div class="items">two</div>
-          <div class="items">three</div>
-          <div class="items">four</div>
-          <div class="items">five</div>
-          <div class="items">six</div>
+          <div class="items">
+            <div class="line"></div>
+            <div class="projects-item">
+              <p><b>Project title</b></p>
+              <p>Project description</p>
+            </div>
+            <div class="projects-icon">
+              <div class="icon-holder">
+                <embed src="star.svg">
+                <embed src="eye.svg">
+                <embed src="share.svg" height="24px" width="24px">
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="line"></div>
+            <div class="projects-item">
+              <p><b>Project title</b></p>
+              <p>Project description</p>
+            </div>
+            <div class="projects-icon">
+              <div class="icon-holder">
+                <embed src="star.svg">
+                <embed src="eye.svg">
+                <embed src="share.svg" height="24px" width="24px">
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="line"></div>
+            <div class="projects-item">
+              <p><b>Project title</b></p>
+              <p>Project description</p>
+            </div>
+            <div class="projects-icon">
+              <div class="icon-holder">
+                <embed src="star.svg">
+                <embed src="eye.svg">
+                <embed src="share.svg" height="24px" width="24px">
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="line"></div>
+            <div class="projects-item">
+              <p><b>Project title</b></p>
+              <p>Project description</p>
+            </div>
+            <div class="projects-icon">
+              <div class="icon-holder">
+                <embed src="star.svg">
+                <embed src="eye.svg">
+                <embed src="share.svg" height="24px" width="24px">
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="line"></div>
+            <div class="projects-item">
+              <p><b>Project title</b></p>
+              <p>Project description</p>
+            </div>
+            <div class="projects-icon">
+              <div class="icon-holder">
+                <embed src="star.svg">
+                <embed src="eye.svg">
+                <embed src="share.svg" height="24px" width="24px">
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="line"></div>
+            <div class="projects-item">
+              <p><b>Project title</b></p>
+              <p>Project description</p>
+            </div>
+            <div class="projects-icon">
+              <div class="icon-holder">
+                <embed src="star.svg">
+                <embed src="eye.svg">
+                <embed src="share.svg" height="24px" width="24px">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="others">
         <div class="descriptor">Announcements</div>
         <div class="other-items-container">
-          <div class="items">
-            item
+          <div class="items announcements">
+            <div>
+              <p><b>Announcement 1</b></p>
+              <p>Announcement info</p>
+            </div>
+            <div class="gap"></div>
+            <div>
+              <p><b>Announcement 2</b></p>
+              <p>Announcement info</p>
+            </div>
+            <div class="gap"></div>
+            <div>
+              <p><b>Announcement 3</b></p>
+              <p>Announcement info</p>
+            </b></div>
           </div>
           <div class="descriptor" style="padding-top: 10px;">
             Trending</div>
-          <div class="items">
-            item
+          <div class="items trending">
+            <div>
+              <embed src="icon.svg" width="36px" height="36px">
+              <div>
+                <div>@garysue</div>
+                <div>Some interesting text</div>
+              </div>
+            </div>
+            <div>
+              <embed src="icon.svg" width="36px" height="36px">
+              <div>
+                <div>@johndoe</div>
+                <div>Another interesting text</div>
+              </div>
+            </div>
+            <div>
+              <embed src="icon.svg" width="36px" height="36px">
+              <div>
+                <div>@marysue</div>
+                <div>Yet another interesting text</div>
+              </div>
+            </div>
+            <div>
+              <embed src="icon.svg" width="36px" height="36px">
+              <div>
+                <div>@janedoe</div>
+                <div>And another interesting text</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -62,7 +62,7 @@ html, body {
   background-color: rgb(32, 32, 32);
   display: grid;
   grid-template: 1fr 3fr / 3fr 2fr;
-  padding: 4px 16px 8px 10px;
+  padding: 20px 16px 8px 10px;
 }
 
 .user-info > div {
@@ -119,6 +119,18 @@ input[type=text] {
   align-items: start;
 }
 
+.username {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr;
+  gap: 16px;
+}
+
+.username div:nth-child(1) > svg {
+  position: relative;
+  top: 6px;
+  left: 6px;
+}
+
 .username, .user-options {
   justify-self: center;
 }
@@ -136,8 +148,8 @@ input[type=text] {
   align-self: center;
   background-color: rgb(194, 41, 41);
   border-radius: 24px;
-  padding: 8px 20px;
-  min-width: 80px;
+  padding: 12px 24px;
+  min-width: 100px;
   display: flex;
   justify-content: center;
   border-width: 0;
@@ -169,9 +181,38 @@ input[type=text] {
 }
 
 .projects-container > .items {
-  background-color: rgb(185, 56, 56);
-  box-shadow: 10px 0px rgb(75, 74, 74) inset,
-            1px 1px 3px rgb(59, 59, 59);
+  background-color: rgb(75, 74, 74);
+  box-shadow: 0px 1px 3px rgb(82, 81, 81);
+  border-radius: 5px;
+  display: grid;
+  grid-template: 4fr 1fr / 8px 1fr;
+  gap: 4px;
+  padding: 0px;
+}
+
+.line {
+  grid-row: 1 / -1;
+  background-color: brown;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.projects-item {
+  font-size: 0.8rem;
+  padding: 2px 16px;
+}
+
+.projects-icon {
+  padding-right: 10px;
+  position: relative;
+  bottom: 8px;
+  display: flex;
+  justify-content: right;
+}
+
+.icon-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
 }
 
 .descriptor {
@@ -193,10 +234,37 @@ input[type=text] {
 
 .other-items-container > .items {
   background-color: rgb(148, 51, 51);
+  padding: 20px 24px;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  box-shadow: 2px 0px 1px rgb(104, 104, 104);
 }
 
-.items {
-  border-radius: 5px 10px;
-  padding: 16px 32px;
-  box-shadow: 1px 1px 3px rgb(59, 59, 59);
+.announcements {
+  display: grid;
+  gap: 8px;
+  grid-template-rows: 1fr 2px 1fr 2px 1fr;
+}
+
+.announcements p {
+  margin: 0px;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+
+.gap {
+  background-color: rgb(44, 44, 44);
+}
+
+.trending > div {
+  padding-left: 8px;
+  padding-right: 8px;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 24px;
 }
