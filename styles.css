@@ -48,7 +48,7 @@ html, body {
   padding: 10px;
 }
 
-.sidebar svg {
+.sidebar svg, embed {
   position: relative;
   top: 3px;
 } 
